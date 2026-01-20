@@ -8,8 +8,7 @@
             "outputs": [
                 ".next/**",
                 "!.next/cache/**",
-                "dist/**",
-                ".expo/**"
+                "dist/**"
             ]
         },
         "dev": {
