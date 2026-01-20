@@ -1,0 +1,291 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.985 0.005 240);
+  --foreground: oklch(0.145 0.01 240);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0.01 240);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0.01 240);
+  --primary: oklch(0.45 0.15 260);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.95 0.05 200);
+  --secondary-foreground: oklch(0.35 0.1 200);
+  --muted: oklch(0.96 0.01 240);
+  --muted-foreground: oklch(0.55 0.02 240);
+  --accent: oklch(0.96 0.01 240);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.92 0.01 240);
+  --input: oklch(0.92 0.01 240);
+  --ring: oklch(0.45 0.15 260);
+  --chart-1: oklch(0.45 0.15 260);
+  --chart-2: oklch(0.60 0.15 200);
+  --chart-3: oklch(0.75 0.18 60);
+  --chart-4: oklch(0.65 0.20 140);
+  --chart-5: oklch(0.50 0.10 300);
+  --sidebar: oklch(0.985 0.005 240);
+  --sidebar-foreground: oklch(0.145 0.01 240);
+  --sidebar-primary: oklch(0.45 0.15 260);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.95 0.02 240);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.92 0.01 240);
+  --sidebar-ring: oklch(0.45 0.15 260);
+
+  /* Status colors */
+  --status-pending: oklch(0.75 0.15 85);
+  --status-pending-fg: oklch(0.35 0.15 85);
+  --status-confirmed: oklch(0.75 0.15 240);
+  --status-confirmed-fg: oklch(0.35 0.15 240);
+  --status-assigned: oklch(0.75 0.15 280);
+  --status-assigned-fg: oklch(0.35 0.15 280);
+  --status-picked-up: oklch(0.75 0.15 260);
+  --status-picked-up-fg: oklch(0.35 0.15 260);
+  --status-in-transit: oklch(0.75 0.15 200);
+  --status-in-transit-fg: oklch(0.35 0.15 200);
+  --status-delivered: oklch(0.75 0.20 140);
+  --status-delivered-fg: oklch(0.30 0.20 140);
+  --status-cancelled: oklch(0.75 0.20 15);
+  --status-cancelled-fg: oklch(0.35 0.20 15);
+}
+
+.dark {
+  --background: oklch(0.10 0.02 240);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.15 0.02 240);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.15 0.02 240);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.60 0.15 260);
+  --primary-foreground: oklch(0.10 0.02 240);
+  --secondary: oklch(0.25 0.05 200);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.20 0.02 240);
+  --muted-foreground: oklch(0.70 0.02 240);
+  --accent: oklch(0.20 0.02 240);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.25 0.02 240);
+  --input: oklch(0.25 0.02 240);
+  --ring: oklch(0.60 0.15 260);
+  --chart-1: oklch(0.60 0.15 260);
+  --chart-2: oklch(0.50 0.15 200);
+  --chart-3: oklch(0.75 0.18 60);
+  --chart-4: oklch(0.65 0.20 140);
+  --chart-5: oklch(0.60 0.10 300);
+  --sidebar: oklch(0.12 0.02 240);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.60 0.15 260);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.20 0.02 240);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.25 0.02 240);
+  --sidebar-ring: oklch(0.60 0.15 260);
+
+  /* Status colors - dark mode */
+  --status-pending: oklch(0.35 0.15 85);
+  --status-pending-fg: oklch(0.85 0.10 85);
+  --status-confirmed: oklch(0.35 0.15 240);
+  --status-confirmed-fg: oklch(0.85 0.10 240);
+  --status-assigned: oklch(0.35 0.15 280);
+  --status-assigned-fg: oklch(0.85 0.10 280);
+  --status-picked-up: oklch(0.35 0.15 260);
+  --status-picked-up-fg: oklch(0.85 0.10 260);
+  --status-in-transit: oklch(0.35 0.15 200);
+  --status-in-transit-fg: oklch(0.85 0.10 200);
+  --status-delivered: oklch(0.35 0.20 140);
+  --status-delivered-fg: oklch(0.85 0.15 140);
+  --status-cancelled: oklch(0.35 0.20 15);
+  --status-cancelled-fg: oklch(0.85 0.15 15);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+
+  /* Page layouts */
+  .page-container {
+    @apply max-w-7xl mx-auto p-6;
+  }
+
+  .page-header {
+    @apply mb-6;
+  }
+
+  .page-title {
+    @apply text-3xl font-bold;
+  }
+
+  .page-description {
+    @apply text-muted-foreground;
+  }
+
+  /* Form layouts */
+  .form-section {
+    @apply space-y-4;
+  }
+
+  .form-field {
+    @apply space-y-2;
+  }
+
+  .form-grid {
+    @apply grid grid-cols-1 gap-4 md:grid-cols-2;
+  }
+
+  .form-actions {
+    @apply flex gap-4 justify-end mt-6;
+  }
+
+  /* Status badges */
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .status-pending {
+    background-color: var(--status-pending);
+    color: var(--status-pending-fg);
+  }
+
+  .status-confirmed {
+    background-color: var(--status-confirmed);
+    color: var(--status-confirmed-fg);
+  }
+
+  .status-assigned {
+    background-color: var(--status-assigned);
+    color: var(--status-assigned-fg);
+  }
+
+  .status-picked-up {
+    background-color: var(--status-picked-up);
+    color: var(--status-picked-up-fg);
+  }
+
+  .status-in-transit {
+    background-color: var(--status-in-transit);
+    color: var(--status-in-transit-fg);
+  }
+
+  .status-delivered {
+    background-color: var(--status-delivered);
+    color: var(--status-delivered-fg);
+  }
+
+  .status-cancelled {
+    background-color: var(--status-cancelled);
+    color: var(--status-cancelled-fg);
+  }
+
+  /* Card variants */
+  .card-interactive {
+    @apply transition-shadow hover:shadow-md cursor-pointer;
+  }
+
+  /* Table layouts */
+  .table-container {
+    @apply overflow-x-auto rounded-lg border;
+  }
+
+  /* Loading states */
+  .loading-container {
+    @apply flex justify-center items-center py-12;
+  }
+
+  .loading-spinner {
+    @apply size-8 animate-spin text-muted-foreground;
+  }
+
+  /* Empty states */
+  .empty-state {
+    @apply text-center py-12;
+  }
+
+  .empty-state-text {
+    @apply text-muted-foreground mb-4;
+  }
+
+  /* Field labels */
+  .field-label {
+    @apply text-sm font-medium;
+  }
+
+  .field-description {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .field-error {
+    @apply text-sm text-destructive mt-1;
+  }
+}
+
+@layer utilities {
+
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Focus utilities */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+  }
+
+  /* Truncate with tooltip-friendly title */
+  .truncate-with-tooltip {
+    @apply truncate cursor-help;
+  }
+}

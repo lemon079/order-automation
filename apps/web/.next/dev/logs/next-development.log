@@ -1,0 +1,2221 @@
+[00:00:01.861] Server  LOG      ✓ Ready in 1397ms
+[00:00:05.910] Server  LOG      ○ Compiling / ...
+[00:00:06.249] Server  ERROR    ⨯ ./apps/web/src/app/page.tsx:2:1
+Module not found: Can't resolve '@repo/uibutton'
+  1 | import Link from 'next/link';
+> 2 | import { Button } from '@repo/uibutton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@repo/uicard';
+  4 | import { LayoutDashboard, Package, Truck, MapPin, BarChart, ArrowRight, CheckCircle2, Zap, Shield } from 'lucide-react';
+  5 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./apps/web/src/app/page.tsx:3:1
+Module not found: Can't resolve '@repo/uicard'
+  1 | import Link from 'next/link';
+  2 | import { Button } from '@repo/uibutton';
+> 3 | import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@repo/uicard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { LayoutDashboard, Package, Truck, MapPin, BarChart, ArrowRight, CheckCircle2, Zap, Shield } from 'lucide-react';
+  5 |
+  6 | export default function LandingPage() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:08.194] Browser ERROR   uncaughtError: Error: ./apps/web/src/app/page.tsx:2:1
+Module not found: Can't resolve '@repo/uibutton'
+  1 | import Link from 'next/link';
+> 2 | import { Button } from '@repo/uibutton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@repo/uicard';
+  4 | import { LayoutDashboard, Package, Truck, MapPin, BarChart, ArrowRight, CheckCircle2, Zap, Shield } from 'lucide-react';
+  5 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:08.403] Browser ERROR   ./apps/web/src/app/page.tsx:2:1
+Module not found: Can't resolve '@repo/uibutton'
+  1 | import Link from 'next/link';
+> 2 | import { Button } from '@repo/uibutton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@repo/uicard';
+  4 | import { LayoutDashboard, Package, Truck, MapPin, BarChart, ArrowRight, CheckCircle2, Zap, Shield } from 'lucide-react';
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:08.403] Browser ERROR   ./apps/web/src/app/page.tsx:3:1
+Module not found: Can't resolve '@repo/uicard'
+  1 | import Link from 'next/link';
+  2 | import { Button } from '@repo/uibutton';
+> 3 | import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@repo/uicard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { LayoutDashboard, Package, Truck, MapPin, BarChart, ArrowRight, CheckCircle2, Zap, Shield } from 'lucide-react';
+  5 |
+  6 | export default function LandingPage() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:08.996] Browser ERROR   ./apps/web/src/app/page.tsx:2:1
+Module not found: Can't resolve '@repo/uibutton'
+  1 | import Link from 'next/link';
+> 2 | import { Button } from '@repo/uibutton';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@repo/uicard';
+  4 | import { LayoutDashboard, Package, Truck, MapPin, BarChart, ArrowRight, CheckCircle2, Zap, Shield } from 'lucide-react';
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:08.996] Browser ERROR   ./apps/web/src/app/page.tsx:3:1
+Module not found: Can't resolve '@repo/uicard'
+  1 | import Link from 'next/link';
+  2 | import { Button } from '@repo/uibutton';
+> 3 | import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@repo/uicard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { LayoutDashboard, Package, Truck, MapPin, BarChart, ArrowRight, CheckCircle2, Zap, Shield } from 'lucide-react';
+  5 |
+  6 | export default function LandingPage() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:22.372] Server  LOG      ✓ Compiled in 425ms
+[00:04:23.483] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:35.385] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[10:07:00.403] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[10:07:52.682] Server  LOG      ✓ Compiled in 186ms
+[10:07:55.059] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[10:08:19.182] Server  LOG      ✓ Compiled in 412ms
+[10:09:36.611] Server  ERROR    ⨯ ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[10:09:36.671] Server  ERROR    ⨯ ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[10:09:36.841] Browser ERROR   Error fetching orders: {}
+[10:09:36.842] Browser ERROR   Error fetching orders: {}
+[10:09:36.842] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:21:34.151] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:22:29.119] Server  LOG      ✓ Compiled in 285ms
+[10:22:30.142] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:23:50.138] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:24:15.724] Server  LOG      ✓ Compiled in 131ms
+[10:24:16.143] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:24:30.142] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:24:50.137] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:25:05.137] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:25:23.137] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:25:37.141] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:25:47.139] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:26:04.148] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:26:18.142] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:26:51.839] Server  LOG      ✓ Compiled in 87ms
+[10:26:52.147] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:26:59.140] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:27:04.728] Server  LOG      ✓ Compiled in 4.2s
+[10:27:05.426] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:27:05.849] Server  LOG      ✓ Compiled in 906ms
+[10:27:06.140] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:27:29.150] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:27:33.138] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:30:22.148] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:30:36.150] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:31:10.555] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[10:31:10.702] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:31:10.819] Browser ERROR   ./packages/shared/src/index.ts:5:1
+Module not found: Can't resolve './supabase'
+  3 | export * from './schemas/order';
+  4 | export * from './auth-context';
+> 5 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:31:10.930] Server  ERROR    ⨯ ./packages/shared/src/index.ts:4:1
+Module not found: Can't resolve './supabase'
+  2 | export * from './schemas/order';
+  3 | export * from './auth-context';
+> 4 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+
+
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[10:31:11.081] Browser ERROR   Error fetching orders: {}
+[10:31:11.081] Browser ERROR   ./packages/shared/src/index.ts:4:1
+Module not found: Can't resolve './supabase'
+  2 | export * from './schemas/order';
+  3 | export * from './auth-context';
+> 4 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:33:27.026] Server  LOG      ✓ Compiled in 280ms
+[10:33:27.150] Browser ERROR   ./packages/shared/src/index.ts:4:1
+Module not found: Can't resolve './supabase'
+  2 | export * from './schemas/order';
+  3 | export * from './auth-context';
+> 4 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:35:19.033] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[10:35:19.648] Browser ERROR   ./packages/shared/src/index.ts:4:1
+Module not found: Can't resolve './supabase'
+  2 | export * from './schemas/order';
+  3 | export * from './auth-context';
+> 4 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:35:19.648] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/orders" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/web/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[10:35:19.648] Browser ERROR   ./packages/shared/src/index.ts:4:1
+Module not found: Can't resolve './supabase'
+  2 | export * from './schemas/order';
+  3 | export * from './auth-context';
+> 4 | export * from './supabase';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+
+Import trace:
+  App Route:
+    ./packages/shared/src/index.ts
+    ./apps/web/src/app/api/orders/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[10:35:19.750] Browser ERROR   Error fetching orders: {}
+[10:35:31.603] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[10:35:31.846] Browser ERROR   Error fetching orders: {}
+[10:42:54.365] Browser ERROR   Error fetching orders: {}
+[10:42:54.365] Browser ERROR   Error fetching orders: {}
+[10:51:42.761] Server  LOG      ✓ Compiled in 1821ms
+[10:51:43.149] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:52:10.137] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:52:15.142] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:52:16.136] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:55:18.146] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:55:52.147] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:55:52.147] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:56:34.138] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:57:46.141] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:58:05.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:58:06.267] Server  LOG      ✓ Compiled in 10ms
+[10:58:07.146] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:58:42.148] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[10:59:52.561] Server  LOG      ✓ Compiled in 362ms
+[10:59:53.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:13.090] Server  LOG        Reload env: .env.local
+[11:02:13.963] Server  ERROR    ⨯ ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+
+[11:02:13.967] Server  LOG      ✓ Compiled in 835ms
+[11:02:13.991] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:13.991] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:14.013] Server  ERROR    ⨯ ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+
+[11:02:14.202] Browser ERROR   uncaughtError: Error: ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+
+[11:02:15.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:15.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:15.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:15.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:15.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:15.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:15.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:15.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:02:15.143] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:17.209] Server  ERROR    ⨯ ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+
+[11:05:17.449] Browser ERROR   uncaughtError: Error: ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+
+[11:05:17.633] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:17.633] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:17.633] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:17.633] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:17.633] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:17.633] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:17.633] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:17.633] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:18.719] Server  ERROR    ⨯ ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+
+[11:05:18.897] Browser ERROR   uncaughtError: Error: ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+
+[11:05:19.070] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.070] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.070] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.070] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.070] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.070] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.070] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.070] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.679] Server  ERROR    ⨯ ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+
+[11:05:19.858] Browser ERROR   uncaughtError: Error: ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+
+[11:05:19.997] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.997] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.997] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.997] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.997] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.997] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.997] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:19.997] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:40.140] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:05:56.146] Browser ERROR   ./packages/shared/src/supabase/server.ts:2:1
+Ecmascript file had an error
+  1 | import { createServerClient } from '@supabase/ssr';
+> 2 | import { cookies } from 'next/headers';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export async function createClient() {
+  5 |     const cookieStore = await cookies();
+
+You're importing a component that needs "next/headers". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Client Component Browser:
+    ./packages/shared/src/supabase/server.ts [Client Component Browser]
+    ./packages/shared/src/supabase/index.ts [Client Component Browser]
+    ./packages/shared/src/index.ts [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component Browser]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./packages/shared/src/supabase/server.ts [Client Component SSR]
+    ./packages/shared/src/supabase/index.ts [Client Component SSR]
+    ./packages/shared/src/index.ts [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Client Component SSR]
+    ./apps/web/src/components/providers/AppProviders.tsx [Server Component]
+    ./apps/web/src/app/layout.tsx [Server Component]
+[11:06:26.919] Server  LOG      ✓ Compiled in 233ms
+[11:06:27.765] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:22:29.975] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:23:11.608] Server  LOG      ✓ Compiled in 168ms
+[11:24:11.997] Server  LOG      ✓ Compiled in 86ms
+[11:24:54.726] Server  LOG      ✓ Compiled in 130ms
+[36:06:30.651] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

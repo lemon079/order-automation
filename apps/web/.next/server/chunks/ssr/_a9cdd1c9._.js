@@ -1,0 +1,3 @@
+module.exports=[24987,a=>{"use strict";let b=(0,a.i(70106).default)("map-pin",[["path",{d:"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0",key:"1r0f0z"}],["circle",{cx:"12",cy:"10",r:"3",key:"ilqhr7"}]]);a.s(["MapPin",()=>b],24987)},43751,a=>{"use strict";a.i(87924);let b=Error("Cannot find module '@repo/ui/components/card'");throw b.code="MODULE_NOT_FOUND",b}];
+
+//# sourceMappingURL=_a9cdd1c9._.js.map
