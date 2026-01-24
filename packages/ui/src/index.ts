@@ -1,7 +1,14 @@
 // UI Components
 export { Badge } from "./components/badge";
 export { Button } from "./components/button";
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "./components/card";
+export {
+  Card,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "./components/card";
 export {
   Dialog,
   DialogPortal,
@@ -32,8 +39,6 @@ export {
 export { Separator } from "./components/separator";
 export {
   Sheet,
-  SheetPortal,
-  SheetOverlay,
   SheetTrigger,
   SheetClose,
   SheetContent,
@@ -44,6 +49,7 @@ export {
 } from "./components/sheet";
 export { Skeleton } from "./components/skeleton";
 export { Switch } from "./components/switch";
+export { Toaster, toast } from "./components/sonner";
 
 // Utilities
 export { cn } from "./lib/utils";

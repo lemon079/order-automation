@@ -5,26 +5,15 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-import { createClient } from '@/lib/supabase/client';
-import { Button } from '@repo/ui';
-import { Input } from '@repo/ui';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@repo/ui';
+import { createBrowserClient, signinSchema, type SigninFormData } from '@repo/shared';
+import { Button, Input, Card, CardHeader, CardTitle, CardDescription, CardContent, toast } from '@repo/ui';
 import { Package } from 'lucide-react';
-
-const signinSchema = z.object({
-    email: z.string().email('Invalid email address'),
-    password: z.string().min(1, 'Password is required'),
-});
-
-type SigninFormData = z.infer<typeof signinSchema>;
 
 export default function SignInPage() {
     const [loading, setLoading] = useState(false);
     const [magicLinkLoading, setMagicLinkLoading] = useState(false);
-    const [message, setMessage] = useState<{ type: 'error' | 'success'; text: string } | null>(null);
     const router = useRouter();
-    const supabase = createClient();
+    const supabase = createBrowserClient();
 
     const { register, handleSubmit, getValues, formState: { errors } } = useForm<SigninFormData>({
         resolver: zodResolver(signinSchema)
@@ -32,22 +21,21 @@ export default function SignInPage() {
 
     const onSubmit = async (data: SigninFormData) => {
         setLoading(true);
-        setMessage(null);
 
         const { error } = await supabase.auth.signInWithPassword({
             email: data.email,
             password: data.password,
         });
-        console.log(error)
 
         if (error) {
             if (error.message.includes('Email not confirmed')) {
-                setMessage({ type: 'error', text: 'Please verify your email address before signing in.' });
+                toast.error('Please verify your email address before signing in.');
             } else {
-                setMessage({ type: 'error', text: error.message });
+                toast.error(error.message);
             }
             setLoading(false);
         } else {
+            toast.success('Welcome back!');
             router.push('/dashboard');
             router.refresh();
         }
@@ -56,12 +44,11 @@ export default function SignInPage() {
     const handleMagicLink = async () => {
         const email = getValues('email');
         if (!email) {
-            setMessage({ type: 'error', text: 'Please enter your email first' });
+            toast.error('Please enter your email first');
             return;
         }
 
         setMagicLinkLoading(true);
-        setMessage(null);
 
         const { error } = await supabase.auth.signInWithOtp({
             email,
@@ -71,9 +58,9 @@ export default function SignInPage() {
         });
 
         if (error) {
-            setMessage({ type: 'error', text: error.message });
+            toast.error(error.message);
         } else {
-            setMessage({ type: 'success', text: 'Check your email for the magic link!' });
+            toast.success('Check your email for the magic link!');
         }
         setMagicLinkLoading(false);
     };
@@ -119,12 +106,6 @@ export default function SignInPage() {
                             )}
                         </div>
 
-                        {message && (
-                            <div className={`text-sm p-3 rounded-lg ${message.type === 'error' ? 'bg-destructive/10 text-destructive' : 'bg-green-500/10 text-green-600'}`}>
-                                {message.text}
-                            </div>
-                        )}
-
                         <Button type="submit" className="w-full" disabled={loading}>
                             {loading ? 'Signing in...' : 'Sign In'}
                         </Button>
@@ -160,3 +141,4 @@ export default function SignInPage() {
         </div>
     );
 }
+

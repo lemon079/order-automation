@@ -6,6 +6,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { createQueryClient } from '@repo/shared';
 import { AuthProvider } from '@/lib/auth-context';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Toaster } from '@repo/ui';
 
 export function AppProviders({ children }: { children: React.ReactNode }) {
     // Create a QueryClient instance per component mount
@@ -22,6 +23,7 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
                 <AuthProvider>
                     {children}
                 </AuthProvider>
+                <Toaster position="top-right" richColors closeButton />
             </ThemeProvider>
             {/* React Query DevTools - only in development */}
             {process.env.NODE_ENV === 'development' && (
@@ -30,4 +32,5 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
         </QueryClientProvider>
     );
 }
+
 

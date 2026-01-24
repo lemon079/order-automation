@@ -3,9 +3,10 @@
 import { useRouter } from 'next/navigation';
 import { useForm, useFieldArray } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { createOrderSchema, type CreateOrderInput, useCreateOrder } from '@repo/shared';
-import { Button, Input, Label, Card, CardHeader, CardTitle, CardContent } from '@repo/ui';
-import { Plus, Trash2, Loader2 } from 'lucide-react';
+import { useCreateOrder } from '@repo/shared';
+import { createOrderSchema, type CreateOrderInput } from '@repo/shared';
+import { Button, Input, Label, Card, CardHeader, CardTitle, CardContent, toast } from '@repo/ui';
+import { Loader2, Plus, Trash2 } from 'lucide-react';
 
 export default function NewOrderPage() {
     const router = useRouter();
@@ -31,11 +32,11 @@ export default function NewOrderPage() {
     const onSubmit = async (data: CreateOrderInput) => {
         try {
             await createOrder(data);
+            toast.success('Order created successfully!');
             router.push('/orders');
             router.refresh();
         } catch (error) {
-            console.error('Error creating order:', error);
-            alert(error instanceof Error ? error.message : 'Failed to create order');
+            toast.error(error instanceof Error ? error.message : 'Failed to create order');
         }
     };
 

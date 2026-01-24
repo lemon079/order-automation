@@ -1,33 +1,16 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-import { createClient } from '@/lib/supabase/client';
-import { Button } from '@repo/ui';
-import { Input } from '@repo/ui';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@repo/ui';
+import { createBrowserClient, signupSchema, type SignupFormData } from '@repo/shared';
+import { Button, Input, Card, CardHeader, CardTitle, CardDescription, CardContent, toast } from '@repo/ui';
 import { Package } from 'lucide-react';
-
-const signupSchema = z.object({
-    email: z.string().email('Invalid email address'),
-    password: z.string().min(6, 'Password must be at least 6 characters'),
-    confirmPassword: z.string()
-}).refine((data) => data.password === data.confirmPassword, {
-    message: "Passwords don't match",
-    path: ['confirmPassword'],
-});
-
-type SignupFormData = z.infer<typeof signupSchema>;
 
 export default function SignUpPage() {
     const [loading, setLoading] = useState(false);
-    const [message, setMessage] = useState<{ type: 'error' | 'success'; text: string } | null>(null);
-    const router = useRouter();
-    const supabase = createClient();
+    const supabase = createBrowserClient();
 
     const { register, handleSubmit, formState: { errors } } = useForm<SignupFormData>({
         resolver: zodResolver(signupSchema)
@@ -35,7 +18,6 @@ export default function SignUpPage() {
 
     const onSubmit = async (data: SignupFormData) => {
         setLoading(true);
-        setMessage(null);
 
         const { error } = await supabase.auth.signUp({
             email: data.email,
@@ -46,13 +28,11 @@ export default function SignUpPage() {
         });
 
         if (error) {
-            setMessage({ type: 'error', text: error.message });
+            toast.error(error.message);
             setLoading(false);
         } else {
-            setMessage({
-                type: 'success',
-                text: 'Account created! Please check your email to verify your account.'
-            });
+            toast.success('Account created! Please check your email to verify.');
+            setLoading(false);
         }
     };
 
@@ -110,12 +90,6 @@ export default function SignUpPage() {
                             )}
                         </div>
 
-                        {message && (
-                            <div className={`text-sm p-3 rounded-lg ${message.type === 'error' ? 'bg-destructive/10 text-destructive' : 'bg-green-500/10 text-green-600'}`}>
-                                {message.text}
-                            </div>
-                        )}
-
                         <Button type="submit" className="w-full" disabled={loading}>
                             {loading ? 'Creating account...' : 'Sign Up'}
                         </Button>
@@ -132,3 +106,4 @@ export default function SignUpPage() {
         </div>
     );
 }
+
