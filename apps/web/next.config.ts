@@ -5,8 +5,6 @@ import { resolve } from "path";
 // Load .env from monorepo root
 config({ path: resolve(__dirname, "../../.env.local") });
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;

@@ -82,7 +82,7 @@ export async function POST(request: NextRequest) {
             items: result.extraction.items,
             special_instructions: result.extraction.specialInstructions,
             confidence_score: result.extraction.confidenceScore,
-            status: "pending",
+            status: "pending_review",
           });
 
         if (insertError) {

@@ -53,3 +53,16 @@ export { Toaster, toast } from "./components/sonner";
 
 // Utilities
 export { cn } from "./lib/utils";
+
+export {
+  Drawer,
+  DrawerPortal,
+  DrawerOverlay,
+  DrawerTrigger,
+  DrawerClose,
+  DrawerContent,
+  DrawerHeader,
+  DrawerFooter,
+  DrawerTitle,
+  DrawerDescription,
+} from "./components/drawer";

@@ -91,3 +91,29 @@ export interface Order extends CreateOrderInput {
   driver_id?: string;
   completed_at?: string;
 }
+
+/**
+ * Order Draft type (for AI-extracted orders)
+ */
+export interface OrderDraft {
+  id: string;
+  call_transcript_id: string;
+
+  // Flat fields matching DB columns
+  customer_name?: string;
+  customer_phone?: string;
+  customer_email?: string;
+  pickup_address?: string;
+  dropoff_address?: string;
+  special_instructions?: string;
+  items: OrderItem[];
+
+  confidence_score: number;
+  status: "pending_review" | "approved" | "rejected";
+  created_at: string;
+  updated_at: string;
+
+  // Virtual fields
+  transcript_text?: string;
+  source?: "voice" | "whatsapp";
+}

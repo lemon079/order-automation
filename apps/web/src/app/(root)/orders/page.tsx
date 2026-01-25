@@ -40,7 +40,7 @@ export default function OrdersPage() {
     }
 
     return (
-        <div className="page-container max-w-5xl mx-auto space-y-8">
+        <div className="max-w-5xl mx-auto space-y-6">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                 <div>
                     <h1 className="text-3xl font-bold tracking-tight">Orders</h1>
@@ -148,7 +148,7 @@ export default function OrdersPage() {
 
 function OrdersSkeleton() {
     return (
-        <div className="page-container max-w-5xl mx-auto space-y-8">
+        <div className="max-w-5xl mx-auto space-y-6">
             <div className="flex justify-between items-center">
                 <div className="space-y-2">
                     <Skeleton className="h-8 w-32" />
