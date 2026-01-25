@@ -58,7 +58,16 @@
 - Created `system_architecture.md` (High-level design, database schema, diagrams)
 - Created `NGROK_SETUP.md` (Guide for webhooks & local auth testing)
 
+## Order Drafts Review UI ✅
+- Created `/drafts` list page fetching from `order_drafts`
+- Implemented `DraftCard` with confidence scores and status indicators
+- Built `ReviewDialog` with form validation (Schema: `@repo/shared`)
+- Added Server Actions: `approveDraft` (promotes to confirmed order) & `rejectDraft` (archives)
+- **Responsive Design**:
+  - Mobile Sidebar with Sheet/Drawer pattern
+  - Timeline visualization for pickup/dropoff
+  - Using `Drawer` for Review on mobile, `Dialog` on desktop
+
 ## Next Steps
 - [ ] Driver app development
 - [ ] Route optimization integration
-- [ ] Order drafts review UI (approve/reject extracted orders)

@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Card, CardContent, CardFooter, CardHeader, Badge, Button, Separator } from '@repo/ui';
+import { Card, CardContent, Badge, Button, Separator } from '@repo/ui';
 import { OrderDraft } from '@repo/shared';
-import { Phone, MessageCircle, MapPin, Flag, Package, ArrowRight } from 'lucide-react';
+import { Phone, MessageCircle, Package, ArrowRight } from 'lucide-react';
 import { ReviewDialog } from './review-dialog';
 import { formatDistanceToNow } from 'date-fns';
 
@@ -59,7 +59,7 @@ export function DraftCard({ draft }: DraftCardProps) {
                         {/* Timeline Line */}
                         <div className="flex flex-col items-center pt-1.5 pb-1.5">
                             <div className="h-2.5 w-2.5 rounded-full border-2 border-primary bg-background shrink-0 z-10" />
-                            <div className="w-[2px] flex-1 bg-gradient-to-b from-muted-foreground/20 to-muted-foreground/10 my-0.5" />
+                            <div className="w-[2px] flex-1 bg-linear-to-b from-muted-foreground/20 to-muted-foreground/10 my-0.5" />
                             <div className="h-2.5 w-2.5 rounded-full border-2 border-foreground bg-foreground shrink-0 z-10" />
                         </div>
 
@@ -67,14 +67,14 @@ export function DraftCard({ draft }: DraftCardProps) {
                         <div className="flex flex-col gap-5 flex-1 min-w-0">
                             <div className="space-y-0.5">
                                 <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Pickup</span>
-                                <p className="text-sm font-medium leading-snug line-clamp-2 break-words" title={pickup}>
+                                <p className="text-sm font-medium leading-snug line-clamp-2 wrap-break-word" title={pickup}>
                                     {pickup || <span className="text-destructive/80 italic">Required</span>}
                                 </p>
                             </div>
 
                             <div className="space-y-0.5">
                                 <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Dropoff</span>
-                                <p className="text-sm font-medium leading-snug line-clamp-2 break-words" title={dropoff}>
+                                <p className="text-sm font-medium leading-snug line-clamp-2 wrap-break-word" title={dropoff}>
                                     {dropoff || <span className="text-destructive/80 italic">Required</span>}
                                 </p>
                             </div>
