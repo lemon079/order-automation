@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
+import { config } from "dotenv";
+import { resolve } from "path";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+// Load .env from monorepo root
+config({ path: resolve(__dirname, "../../.env.local") });
+
+const nextConfig: NextConfig = {};
 
 export default nextConfig;

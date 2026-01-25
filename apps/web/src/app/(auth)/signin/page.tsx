@@ -50,10 +50,12 @@ export default function SignInPage() {
 
         setMagicLinkLoading(true);
 
+        const baseUrl = process.env.NEXT_PUBLIC_API_URL || window.location.origin;
+
         const { error } = await supabase.auth.signInWithOtp({
             email,
             options: {
-                emailRedirectTo: `${window.location.origin}/callback`,
+                emailRedirectTo: `${baseUrl}/callback?next=/dashboard`,
             },
         });
 

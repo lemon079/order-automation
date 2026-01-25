@@ -13,7 +13,7 @@
     "type-check": "turbo type-check"
   },
   "devDependencies": {
-    "turbo": "^2.7.5",
+    "turbo": "^2.7.6",
     "typescript": "^5"
   },
   "packageManager": "npm@10.2.4",

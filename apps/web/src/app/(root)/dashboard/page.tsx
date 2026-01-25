@@ -33,7 +33,7 @@ export default function DashboardPage() {
     const activeDrivers = mockDrivers.filter(d => d.status === 'active').length;
 
     return (
-        <div className="p-6 space-y-6">
+        <div className="space-y-6">
             {/* Header */}
             <div>
                 <h1 className="text-3xl font-bold">Dashboard</h1>
