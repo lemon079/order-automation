@@ -1,4 +1,0 @@
-{
-  "/(root)/orders/page": "app/(root)/orders/page.js",
-  "/api/orders/route": "app/api/orders/route.js"
-}
