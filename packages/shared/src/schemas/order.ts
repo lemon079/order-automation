@@ -57,3 +57,37 @@ export type CreateOrderInput = z.infer<typeof createOrderSchema>;
 export const updateOrderSchema = createOrderSchema.partial();
 
 export type UpdateOrderInput = z.infer<typeof updateOrderSchema>;
+
+/**
+ * Order Status
+ */
+export const orderStatusSchema = z.enum([
+  "pending",
+  "confirmed",
+  "assigned",
+  "picked_up",
+  "in_transit",
+  "delivered",
+  "cancelled",
+]);
+
+export type OrderStatus = z.infer<typeof orderStatusSchema>;
+
+/**
+ * Full Order type (as returned from database)
+ */
+export interface Order extends CreateOrderInput {
+  id: string;
+  order_number: number;
+  status: OrderStatus;
+  created_at: string;
+  updated_at: string;
+  pickup_lat?: number;
+  pickup_lng?: number;
+  dropoff_lat?: number;
+  dropoff_lng?: number;
+  estimated_distance?: number;
+  estimated_duration?: number;
+  driver_id?: string;
+  completed_at?: string;
+}

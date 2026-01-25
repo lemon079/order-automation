@@ -4,9 +4,10 @@ import { createClient as createServerClient } from "@repo/shared/supabase/server
 // GET /api/orders/[id] - Get single order
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
+    const { id } = await params;
     const supabase = await createServerClient();
 
     // Check authentication
@@ -22,7 +23,7 @@ export async function GET(
     const { data, error } = await supabase
       .from("orders")
       .select("*")
-      .eq("id", params.id)
+      .eq("id", id)
       .single();
 
     if (error) {
@@ -50,9 +51,10 @@ export async function GET(
 // PATCH /api/orders/[id] - Update order
 export async function PATCH(
   request: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
+    const { id } = await params;
     const body = await request.json();
 
     const supabase = await createServerClient();
@@ -71,7 +73,7 @@ export async function PATCH(
     const { data, error } = await supabase
       .from("orders")
       .update(body)
-      .eq("id", params.id)
+      .eq("id", id)
       .select()
       .single();
 

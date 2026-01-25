@@ -92,6 +92,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/(root)/orders/new/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/orders/new">> = Specific
+  const handler = {} as typeof import("../../src/app/(root)/orders/new/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/(root)/orders/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/orders">> = Specific
@@ -137,10 +146,55 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
-// Validate ../../src/app/api/orders/resolve/route.ts
+// Validate ../../src/app/api/orders/[id]/route.ts
 {
-  type __IsExpected<Specific extends RouteHandlerConfig<"/api/orders/resolve">> = Specific
-  const handler = {} as typeof import("../../src/app/api/orders/resolve/route.js")
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/orders/[id]">> = Specific
+  const handler = {} as typeof import("../../src/app/api/orders/[id]/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/api/orders/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/orders">> = Specific
+  const handler = {} as typeof import("../../src/app/api/orders/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/api/process-calls/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/process-calls">> = Specific
+  const handler = {} as typeof import("../../src/app/api/process-calls/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/api/twilio/recording/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/twilio/recording">> = Specific
+  const handler = {} as typeof import("../../src/app/api/twilio/recording/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/api/twilio/transcription/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/twilio/transcription">> = Specific
+  const handler = {} as typeof import("../../src/app/api/twilio/transcription/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/api/twilio/voice/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/twilio/voice">> = Specific
+  const handler = {} as typeof import("../../src/app/api/twilio/voice/route.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
