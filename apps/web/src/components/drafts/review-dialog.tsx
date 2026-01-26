@@ -13,6 +13,8 @@ import { OrderDraft, createOrderSchema, CreateOrderInput } from '@repo/shared';
 import { approveDraft, rejectDraft } from '@/app/actions/drafts';
 import { Trash2, Plus, Loader2, User, MapPin, Package, FileText, MessageSquare } from 'lucide-react';
 import { useMediaQuery } from '@/hooks/use-media-query';
+import { useQueryClient } from '@tanstack/react-query';
+import { useRouter } from 'next/navigation';
 
 interface ReviewDialogProps {
     draft: OrderDraft;
@@ -58,6 +60,8 @@ export function ReviewDialog({ draft, open, onOpenChange }: ReviewDialogProps) {
 
 function ReviewForm({ draft, onOpenChange, isDrawer = false }: { draft: OrderDraft, onOpenChange: (open: boolean) => void, isDrawer?: boolean }) {
     const [submitting, setSubmitting] = useState(false);
+    const queryClient = useQueryClient();
+    const router = useRouter();
 
     const form = useForm<CreateOrderInput>({
         resolver: zodResolver(createOrderSchema),
@@ -83,6 +87,10 @@ function ReviewForm({ draft, onOpenChange, isDrawer = false }: { draft: OrderDra
             const result = await approveDraft(draft.id, data);
             if (result.success) {
                 toast.success('Order created successfully');
+                // Invalidate React Query cache for orders
+                queryClient.invalidateQueries({ queryKey: ['orders'] });
+                // Also refresh the current page data
+                router.refresh();
                 onOpenChange(false);
             } else {
                 toast.error(`Failed to approve: ${result.error}`);
