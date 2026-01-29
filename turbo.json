@@ -8,7 +8,9 @@
             "outputs": [
                 ".next/**",
                 "!.next/cache/**",
-                "dist/**"
+                "dist/**",
+                "android/**",
+                "ios/**"
             ]
         },
         "dev": {
@@ -19,6 +21,14 @@
             "dependsOn": [
                 "^build"
             ]
+        },
+        "android": {
+            "cache": false,
+            "persistent": true
+        },
+        "ios": {
+            "cache": false,
+            "persistent": true
         },
         "type-check": {
             "dependsOn": [

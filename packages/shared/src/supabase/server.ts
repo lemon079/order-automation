@@ -27,3 +27,22 @@ export async function createClient() {
     },
   );
 }
+
+/**
+ * Create a Supabase client with the service role key.
+ * This bypasses RLS and should only be used for admin operations.
+ */
+export function createServiceRoleClient() {
+  return createServerClient(
+    process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_KEY!,
+    {
+      cookies: {
+        getAll() {
+          return [];
+        },
+        setAll() {},
+      },
+    },
+  );
+}

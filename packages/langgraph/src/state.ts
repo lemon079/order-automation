@@ -18,6 +18,48 @@ export interface OrderExtraction {
 }
 
 /**
+ * Issue types that the validation agent can detect
+ */
+export type ValidationIssueType =
+  | "address_ambiguous"
+  | "address_impossible"
+  | "missing_customer_name"
+  | "missing_customer_phone"
+  | "missing_pickup_address"
+  | "missing_dropoff_address"
+  | "missing_items"
+  | "invalid_phone_format"
+  | "same_pickup_dropoff"
+  | "unclear_items";
+
+/**
+ * Priority classification for orders
+ */
+export type OrderPriority = "urgent" | "normal" | "low";
+
+/**
+ * A single validation issue detected by the agent
+ */
+export interface ValidationIssue {
+  type: ValidationIssueType;
+  field: string;
+  message: string;
+  suggestedQuestion: string;
+  severity: "error" | "warning";
+}
+
+/**
+ * Validation result from the validation agent
+ */
+export interface ValidationResult {
+  isValid: boolean;
+  issues: ValidationIssue[];
+  priority: OrderPriority;
+  priorityReason: string;
+  summary: string;
+}
+
+/**
  * Call Intake Agent State
  * Used by the LangGraph workflow to process call transcripts
  */
@@ -32,8 +74,14 @@ export const CallIntakeState = Annotation.Root({
     default: () => "idle",
   }),
 
-  // Output
+  // Extraction Output
   extraction: Annotation<OrderExtraction | null>({
+    reducer: (_, update) => update,
+    default: () => null,
+  }),
+
+  // Validation Output
+  validation: Annotation<ValidationResult | null>({
     reducer: (_, update) => update,
     default: () => null,
   }),

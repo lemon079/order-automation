@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createClient as createServerClient } from "@repo/shared/supabase/server";
+import {
+  createClient as createServerClient,
+  createServiceRoleClient,
+} from "@repo/shared/supabase/server";
 
 // Helper function to clean form data - converts empty strings to null
 function sanitizeOrderData(
@@ -90,8 +93,11 @@ export async function GET(request: NextRequest) {
     const limit = parseInt(searchParams.get("limit") || "50");
     const offset = parseInt(searchParams.get("offset") || "0");
 
+    // Use service role client to bypass RLS for admin access
+    const adminClient = createServiceRoleClient();
+
     // Build query
-    let query = supabase
+    let query = adminClient
       .from("orders")
       .select("*", { count: "exact" })
       .order("created_at", { ascending: false })

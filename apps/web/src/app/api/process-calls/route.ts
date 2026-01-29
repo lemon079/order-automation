@@ -70,7 +70,30 @@ export async function POST(request: NextRequest) {
           continue;
         }
 
-        // Insert into order_drafts
+        // Determine status based on validation
+        let status = "pending_review";
+        if (result.validation) {
+          if (!result.validation.isValid) {
+            status = "pending_review"; // Needs human attention
+          } else if (
+            result.extraction.confidenceScore >= 0.9 &&
+            result.validation.issues.length === 0
+          ) {
+            status = "pending"; // High confidence, auto-approve candidate
+          }
+        }
+
+        // Log validation results
+        if (result.validation) {
+          console.log(`[Process Calls] Validation for ${transcript.id}:`, {
+            isValid: result.validation.isValid,
+            priority: result.validation.priority,
+            issueCount: result.validation.issues.length,
+            summary: result.validation.summary,
+          });
+        }
+
+        // Insert into order_drafts with validation data
         const { error: insertError } = await supabase
           .from("order_drafts")
           .insert({
@@ -82,7 +105,12 @@ export async function POST(request: NextRequest) {
             items: result.extraction.items,
             special_instructions: result.extraction.specialInstructions,
             confidence_score: result.extraction.confidenceScore,
-            status: "pending_review",
+            status,
+            // Validation data
+            is_valid: result.validation?.isValid ?? false,
+            validation_issues: result.validation?.issues ?? [],
+            priority: result.validation?.priority ?? "normal",
+            validation_summary: result.validation?.summary ?? null,
           });
 
         if (insertError) {
