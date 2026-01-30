@@ -1,15 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Badge, Skeleton } from '@repo/ui';
+import { Button, Card, CardContent, Badge, Skeleton } from '@repo/ui';
 import {
     Plus,
     Calendar,
-    MapPin,
-    ArrowRight,
     Package,
     Phone,
-    User,
     ChevronRight,
     Clock
 } from 'lucide-react';
