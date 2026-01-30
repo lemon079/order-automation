@@ -1,6 +1,9 @@
 "use server";
 
-import { createClient } from "@repo/shared/supabase/server";
+import {
+  createClient,
+  createServiceRoleClient,
+} from "@repo/shared/supabase/server";
 import { revalidatePath } from "next/cache";
 import { CreateOrderInput, OrderDraft } from "@repo/shared";
 
@@ -46,7 +49,11 @@ export async function approveDraft(
   draftId: string,
   orderData: CreateOrderInput,
 ) {
-  const supabase = await createClient();
+  console.log("[approveDraft] Starting approval for draft:", draftId);
+  console.log("[approveDraft] Order data:", JSON.stringify(orderData, null, 2));
+
+  // Use service role client to bypass RLS
+  const supabase = createServiceRoleClient();
 
   // 1. Create the Order
   const { data: order, error: orderError } = await supabase
@@ -73,9 +80,11 @@ export async function approveDraft(
     .single();
 
   if (orderError) {
-    console.error("Error creating order from draft:", orderError);
+    console.error("[approveDraft] Error creating order:", orderError);
     return { success: false, error: orderError.message };
   }
+
+  console.log("[approveDraft] Order created successfully:", order.id);
 
   // 2. Create Order Items
   if (orderData.items && orderData.items.length > 0) {

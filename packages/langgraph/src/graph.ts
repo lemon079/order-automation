@@ -1,17 +1,20 @@
 import { StateGraph, END, START } from "@langchain/langgraph";
 import { CallIntakeState, CallIntakeStateType } from "./state";
 import { extractOrderNode } from "./nodes/extract-order";
+import { validateOrderNode } from "./nodes/validate-order";
 
 /**
  * Create and compile the call intake workflow graph
  *
- * Flow: START -> extractOrder -> END
+ * Flow: START -> extractOrder -> validateOrder -> END
  */
 export function createCallIntakeGraph() {
   const workflow = new StateGraph(CallIntakeState)
     .addNode("extractOrder", extractOrderNode)
+    .addNode("validateOrder", validateOrderNode)
     .addEdge(START, "extractOrder")
-    .addEdge("extractOrder", END);
+    .addEdge("extractOrder", "validateOrder")
+    .addEdge("validateOrder", END);
 
   return workflow.compile();
 }
@@ -30,6 +33,7 @@ export async function executeCallIntake(
     transcript,
     currentStep: "idle",
     extraction: null,
+    validation: null,
     error: null,
   });
 
@@ -37,4 +41,10 @@ export async function executeCallIntake(
 }
 
 // Re-export types
-export type { CallIntakeStateType, OrderExtraction } from "./state";
+export type {
+  CallIntakeStateType,
+  OrderExtraction,
+  ValidationResult,
+  ValidationIssue,
+  OrderPriority,
+} from "./state";
